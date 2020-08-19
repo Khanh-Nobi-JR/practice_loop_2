@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai3</title>
+</head>
+<body>
+<script>
+    let num = +prompt("nhập chiều cao");
+    if (num <= 0){
+        alert("nhập lại");
+    } else{
+        for (let i = 1; i <= num; i++) {
+            for (let j = 1; j <= i; j++) {
+                document.write("*");
+            }document.write("<br/>");
+        }
+    }
+    document.write("<br/>");
+    for (let i = num; i >= 1; i--) {
+        for (let j = 1; j <= i ; j++) {
+            document.write("*");
+        } document.write("<br/>");
+
+    }
+    document.write("<br/>")
+    for(let i=1;i<=num;i++){
+        for(j=1;j<=num;j++){
+            if(j<=num-i)
+                document.write("&nbsp;&nbsp;");
+            else
+                document.write("*");
+        }
+        document.write("<br>");
+    }
+    document.write("<br>");
+
+        for(let i=num;i>=1;i--){
+            for(j=1;j<=num;j++){
+                if(j<=num-i)
+                    document.write("&nbsp;&nbsp;");
+                else
+                    document.write("*");
+            }
+            document.write("<br>");
+        }
+
+</script>
+</body>
+</html>
